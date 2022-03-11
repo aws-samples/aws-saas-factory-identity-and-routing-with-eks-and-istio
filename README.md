@@ -30,7 +30,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     * Enter the following in the terminal window
 
     ```bash
-    git clone https://github.com/aws-samples/aws-saas-factory-identity-and-routing-with-eks-and-istio
+    git clone https://github.com/aws-samples/aws-saas-factory-identity-and-routing-with-eks-and-istio.git
     cd aws-saas-factory-istio-reference-architecture
     chmod +x setup.sh
     ./setup.sh
