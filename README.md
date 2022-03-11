@@ -31,7 +31,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
     ```bash
     git clone https://github.com/aws-samples/aws-saas-factory-identity-and-routing-with-eks-and-istio.git
-    cd aws-saas-factory-istio-reference-architecture
+    cd aws-saas-factory-identity-and-routing-with-eks-and-istio
     chmod +x setup.sh
     ./setup.sh
    ```
@@ -52,7 +52,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
 6. Deploy Istio Service Mesh
     > :warning: Close the terminal window that you created the cluster in, and open a new terminal before starting this step otherwise you may get errors about your AWS_REGION not set.
-    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-istio-reference-architecture` and run the following script:
+    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-identity-and-routing-with-eks-and-istio` and run the following script:
 
     ```bash
     chmod +x deploy2.sh
@@ -63,7 +63,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
 7. Deploy Cognito User Pools
     > :warning: Close the terminal window that you create the cluster in, and open a new terminal before starting this step otherwise you may get errors about your AWS_REGION not set.
-    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-istio-reference-architecture` and run the following script:
+    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-identity-and-routing-with-eks-and-istio` and run the following script:
 
     ```bash
     chmod +x deploy-userpools.sh
@@ -80,7 +80,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
 8. Configure Istio Ingress Gateway
     > :warning: Close the terminal window that you create the cluster in, and open a new terminal before starting this step otherwise you may get errors about your AWS_REGION not set.
-    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-istio-reference-architecture` and run the following script:
+    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-identity-and-routing-with-eks-and-istio` and run the following script:
 
     ```bash
     chmod +x configure-istio.sh
@@ -113,7 +113,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
 9. Deploy Tenant Application Microservices
     > :warning: Close the terminal window that you create the cluster in, and open a new terminal before starting this step otherwise you may get errors about your AWS_REGION not set.
-    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-istio-reference-architecture` and run the following script:
+    * Open a **_NEW_** terminal window and `cd` back into `aws-saas-factory-identity-and-routing-with-eks-and-istio` and run the following script:
 
     ```bash
     chmod +x deploy-tenant-services.sh
