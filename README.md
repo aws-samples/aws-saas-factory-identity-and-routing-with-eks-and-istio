@@ -205,6 +205,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     ```
 
     This [script](./cleanup.sh) will 
+
     a. Delete the Cognito User Pools and the assoicated Hosted UI domains
 
     b. Uninstall AWS Load Balancer Controller
