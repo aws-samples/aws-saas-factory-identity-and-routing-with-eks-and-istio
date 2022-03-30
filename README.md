@@ -3,7 +3,7 @@
 The code shared here is intended to provide a sample implementation of a SaaS Identity and Routing solution based on Istio Service Mesh and Amazon EKS. The goal is to provide SaaS developers and architects with working code that will illustrate how multi-tenant SaaS applications can be design and delivered on AWS using Istio Service Mesh and Amazon EKS. The solution implements an identity model that simplifies the mapping of individual tenants and routing of traffic to isolated  tenant environments. The focus here is more on giving developers a view into the working elements of the solution without going to the extent of making a full, production-ready solution.
 
 Note that the instructions below are intended to give you step-by-step, how-to instructions for getting this solution up and running in your own AWS account. For a general description and overview of the solution, please see the 
-[blog post here](http://..................).
+[blog post here](https://aws.amazon.com/blogs/apn/saas-identity-and-routing-with-istio-service-mesh-and-amazon-eks/).
 
 ## Setting up the environment
 
