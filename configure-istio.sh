@@ -67,7 +67,8 @@ kubectl -n cluster1-gateway-ns apply -f ${YAML_PATH}/cluster1-gateway.yaml
 
 echo "Creating ECR Repository"
 ECR_REPO=$(aws ecr create-repository \
-  --repository-name envoyproxy)
+  --repository-name envoyproxy \
+  --encryption-configuration encryptionType=KMS)
   
 REPO_URI=$(echo $ECR_REPO|jq -r '.repository.repositoryUri')
 

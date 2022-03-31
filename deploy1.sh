@@ -34,6 +34,7 @@ managedNodeGroups:
   desiredCapacity: 3
   instanceTypes: ["t3a.medium","t3.medium"]
   spot: true
+  volumeEncrypted: true
   ssh:
     allow: true
     publicKeyName: istio-saas
