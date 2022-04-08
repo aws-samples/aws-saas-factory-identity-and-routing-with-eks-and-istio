@@ -159,7 +159,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
 
             * user1@tenantb.com
         
-          This should result in displaying the bookinfo page
+       This should result in displaying the bookinfo page
 
 11. Tenant Onboarding
 
@@ -186,6 +186,7 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     ```bash
     chmod +x update-hosts-file-entry.sh
     ./update-hosts-file-entry.sh
+    ```
 
     e. Append the output of the command into the local hosts file. It identifies the load balancer instance associated with the Istio Ingress Gateway, and looks up the public IP addresses assigned to it.
 
