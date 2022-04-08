@@ -145,14 +145,18 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     h. After creating the profile, click on the "Launch profile in new browser"
 
     i. In the browser, open two tabs, one for each of the following URLs:
+
         - https://tenanta.example.com/bookinfo
+
         - https://tenantb.example.com/bookinfo
 
     j. Because of self-signed TLS certificates, you may received a certificate related error or warning from the browser
 
     k. When the login prompt appears:
         - In the browser windows with the "istio-saas" profile, login with:
+
             * user1@tenanta.com
+
             * user1@tenantb.com
         
           This should result in displaying the bookinfo page
@@ -186,11 +190,13 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     e. Append the output of the command into the local hosts file. It identifies the load balancer instance associated with the Istio Ingress Gateway, and looks up the public IP addresses assigned to it.
 
     f. In the browser window with the "istio-saas" profile, open another tab for:
+
         - https://tenantc.example.com/bookinfo
 
     g. Because of self-signed TLS certificates, you may received a certificate related error or warning from the browser
 
     h. When the login prompt appears, login with:
+
             * user1@tenantc.com
 
        This should result in displaying the bookinfo page
