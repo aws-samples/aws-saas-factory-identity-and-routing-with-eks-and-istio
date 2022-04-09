@@ -16,7 +16,8 @@ Note that the instructions below are intended to give you step-by-step, how-to i
     * Choose “t3.small” for instance type, take all default values and click Create environment
 2. Create EC2 Instance Role
     * Follow this [deep link](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess) to create an IAM role with Administrator access.
-    * Confirm that AWS service and EC2 are selected, then click Next to view permissions.* Confirm that AdministratorAccess is checked, then click `Next: Tags` to assign tags.
+    * Confirm that AWS service and EC2 are selected, then click Next to view permissions.
+    * Confirm that AdministratorAccess is checked, then click `Next: Tags` to assign tags.
     * Take the defaults, and click `Next: Review` to review.
     * Enter `istio-ref-arch-admin` for the Name, and click `Create role`.
 3. Remove managed credentials and attach EC2 Instance Role to Cloud9 Instance
