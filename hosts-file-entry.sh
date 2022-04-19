@@ -5,7 +5,7 @@ export LB_FQDN=$(kubectl -n istio-system \
          get svc istio-ingressgateway \
          -o=jsonpath='{.status.loadBalancer.ingress[0].hostname}')
 
-export LB_NAME=$(echo ${LB_NAME} | awk -F- '{print $1}')
+export LB_NAME=$(echo ${LB_FQDN} | awk -F- '{print $1}')
 
 STATUS=$(aws elbv2 describe-load-balancers --name ${LB_NAME} \
   --query 'LoadBalancers[0].State.Code' \
@@ -13,7 +13,7 @@ STATUS=$(aws elbv2 describe-load-balancers --name ${LB_NAME} \
 
 echo "Status of Load Balancer ${LB_NAME}: $STATUS"
 
-if [ $STATUS == "active" ]
+if [[ $STATUS == "active" ]]
 then
     echo "You can update your hosts file with the following entries:"
     echo "---------------------------------------------------------"
